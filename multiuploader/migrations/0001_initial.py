@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('id', models.CharField(max_length=255, primary_key=True, serialize=False)),
                 ('filename', models.CharField(max_length=255)),
                 ('upload_date', models.DateTimeField()),
-                ('file', models.FileField(max_length=255, upload_to=multiuploader.models._upload_to)),
+                ('file', models.FileField(max_length=255, upload_to=multiuploader.models.MultiuploaderFile._upload_to)),
             ],
             options={
                 'verbose_name': 'multiuploader file',

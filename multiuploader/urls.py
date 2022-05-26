@@ -1,6 +1,6 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
-urlpatterns = patterns('',
+urlpatterns = [
    url(r'^multiuploader_delete_multiple/$', 'multiuploader.views.multiuploader_delete_multiple',
        name='multiuploader_delete_multiple'),
    url(r'^multiuploader_delete/(?P<pk>\w+)/$', 'multiuploader.views.multiuploader_delete',
@@ -10,4 +10,4 @@ urlpatterns = patterns('',
        name='multiploader_noajax'),
    url(r'^multiuploader_file/(?P<pk>\w*)/$', 'multiuploader.views.multi_show_uploaded',
        name='multiuploader_file_link')
-)
+]
